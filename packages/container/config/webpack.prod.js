@@ -18,7 +18,8 @@ const prodConfig = {
       },
       shared: packageJson.dependencies
     })
-  ]
+  ],
+  devtool: 'eval-cheap-source-map'
 }
 
 module.exports = merge(commonConfig, prodConfig)
