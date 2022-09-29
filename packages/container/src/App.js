@@ -1,3 +1,4 @@
+// must consist with useStyles, both should import from '@material-ui/core' or '@material-ui/core/styles'
 import {createGenerateClassName, StylesProvider} from '@material-ui/core'
 import React from 'react'
 import {BrowserRouter} from 'react-router-dom'
