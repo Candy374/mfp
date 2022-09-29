@@ -1,4 +1,4 @@
-import {createGenerateClassName, StylesProvider} from '@material-ui/core/styles'
+import {createGenerateClassName, StylesProvider} from '@material-ui/core'
 import React from 'react'
 import {BrowserRouter} from 'react-router-dom'
 import Header from './components/Header'
@@ -11,8 +11,8 @@ export default () => {
     <StylesProvider generateClassName={generateClassName}>
       <BrowserRouter>
         <div>
-          <Header />
           <MarketingApp />
+          <Header />
         </div>
       </BrowserRouter>
     </StylesProvider>

@@ -1,4 +1,4 @@
-import {createGenerateClassName, StylesProvider} from '@material-ui/core/styles'
+import {createGenerateClassName, StylesProvider} from '@material-ui/core'
 import React from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Landing from './components/Landing'
