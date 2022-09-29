@@ -6,7 +6,8 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: '/marketing/latest/'
+    publicPath: '/marketing/latest/',
+    devtool: 'eval-cheap-source-map'
   },
   plugins: [
     new ModuleFederationPlugin({
