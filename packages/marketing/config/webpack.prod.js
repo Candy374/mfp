@@ -6,8 +6,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: '/marketing/latest/',
-    devtool: 'eval-cheap-source-map'
+    publicPath: '/marketing/latest/'
   },
   plugins: [
     new ModuleFederationPlugin({
@@ -18,7 +17,8 @@ const prodConfig = {
       },
       shared: packageJson.dependencies
     })
-  ]
+  ],
+  devtool: 'eval-cheap-source-map'
 }
 
 module.exports = merge(commonConfig, prodConfig)
