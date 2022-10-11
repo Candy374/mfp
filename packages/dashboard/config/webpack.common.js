@@ -36,6 +36,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: './public/index.html'
     }),
-    new VueLoaderPlugin({})
+    new VueLoaderPlugin()
   ]
 }
