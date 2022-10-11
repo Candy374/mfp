@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Header from './components/Header'
 const AuthApp = React.lazy(() => import('./components/AuthApp'))
 const MarketingApp = React.lazy(() => import('./components/MarketingApp'))
+import ProgressBar from './components/ProgressBar'
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'co'
@@ -15,7 +16,7 @@ export default () => {
     <BrowserRouter>
       <StylesProvider generateClassName={generateClassName}>
         <Header />
-        <Suspense fallback={<div>loading</div>}>
+        <Suspense fallback={<ProgressBar />}>
           <Switch>
             <Route path='/auth' component={AuthApp} />
             <Route path='/' component={MarketingApp} />
